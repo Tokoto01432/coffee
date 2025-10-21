@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order - Snipping Bean Juice</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Order Your Favorite Coffee</h1>
+  </header>
+
+  <main class="order-page">
+    <div class="coffee-list">
+
+      <div class="coffee-item" data-name="Espresso" data-price="25">
+        <img src="Espresso.webp" alt="Espresso">
+        <h3>Espresso</h3>
+        <p class="price">Price: R25 per cup</p>
+        <label>Cups: <input type="number" min="0" value="0" class="cups"></label>
+        <label>Sugar (spoons): <input type="number" min="0" value="0" class="sugar"></label>
+        <label><input type="checkbox" class="milk"> Add Milk</label>
+        <button class="order-btn">Order</button>
+      </div>
+
+      <div class="coffee-item" data-name="Latte" data-price="20">
+        <img src="latte.webp" alt="Latte">
+        <h3>Latte</h3>
+        <p class="price">Price: R20 per cup</p>
+        <label>Cups: <input type="number" min="0" value="0" class="cups"></label>
+        <label>Sugar (spoons): <input type="number" min="0" value="0" class="sugar"></label>
+        <label><input type="checkbox" class="milk"> Add Milk</label>
+        <button class="order-btn">Order</button>
+      </div>
+
+      <div class="coffee-item" data-name="Cappuccino" data-price="30">
+        <img src="cappuccino.webp" alt="Cappuccino">
+        <h3>Cappuccino</h3>
+        <p class="price">Price: R30 per cup</p>
+        <label>Cups: <input type="number" min="0" value="0" class="cups"></label>
+        <label>Sugar (spoons): <input type="number" min="0" value="0" class="sugar"></label>
+       <label><input type="checkbox" class="milk"> Add Milk</label>
+        <button class="order-btn">Order</button>
+      </div>
+
+      <div class="coffee-item" data-name="Mocha" data-price="30">
+        <img src="mocha.webp" alt="Mocha">
+        <h3>Mocha</h3>
+        <p class="price">Price: R30 per cup</p>
+        <label>Cups: <input type="number" min="0" value="0" class="cups"></label>
+        <label>Sugar (spoons): <input type="number" min="0" value="0" class="sugar"></label>
+        <label><input type="checkbox" class="milk"> Add Milk</label>
+        <button class="order-btn">Order</button>
+      </div>
+
+      <div class="coffee-item" data-name="Americano" data-price="15">
+        <img src="americano.webp" alt="Americano">
+        <h3>Americano</h3>
+        <p class="price">Price: R15 per cup</p>
+        <label>Cups: <input type="number" min="0" value="0" class="cups"></label>
+        <label>Sugar (spoons): <input type="number" min="0" value="0" class="sugar"></label>
+        <label><input type="checkbox" class="milk"> Add Milk</label>
+        <button class="order-btn">Order</button>
+      </div>
+    </div>
+
+    <div id="receipt" class="receipt hidden">
+      <h2>Receipt</h2>
+      <ul id="orderHistory"></ul>
+      <p><strong>Total:</strong> R<span id="totalAmount">0</span></p>
+    </div>
+  </main>
+
+</body>
+</html>
